@@ -38,15 +38,15 @@ body {
     display: flex;
     gap: 80px;
 }
-.cabecalho__menu__link{
-    font-family:var(--fonte-secundaria);
-    field-sizing: 1.5rem;
-    font-weight: 600px;
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--cor-tercearia);
     text-decoration: none;
-
-
 }
+
+
 
 
 
@@ -134,13 +134,19 @@ body {
 
 
 .rodape{
-    padding: 24px;
-    color:var(--cor-primaria);
-    background-color:var(--cor-tercearia);
-    text-align: center;
-    font-family:var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
+        padding: 24px;
+         color: var(--cor-primaria);
+         background-color: var(--cor-tercearia);
+         text-align: center;
+         font-family: var(--fonte-secundaria);
+         font-size: 1.5rem;
+         font-weight: 400;
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         z-index: 100;
+    
 
 }
 @media (max-width: 1200px) {
