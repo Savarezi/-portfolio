@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Certificados - Patrícia Oliveira</title>
+    <link rel="stylesheet" href="/estilos/style.css" />
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cabecalho {
+            background-color: #000;
+            padding: 15px 20px;
+        }
+
+        .cabecalho__menu {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .cabecalho__menu__link {
+            color: #22d4fd;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding-bottom: 4px;
+            transition: border-bottom 0.3s;
+        }
+
+        .cabecalho__menu__link:hover {
+            border-bottom: 2px solid #22d4fd;
+        }
+
+        .carrossel-container {
+            max-width: 800px;
+            margin: 50px auto;
+            border: 2px solid #22d4fd;
+            border-radius: 16px;
+            padding: 30px;
+            background-color: #000000;
+        }
+
+        .certificado {
+            display: none;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .certificado.ativo {
+            display: block;
+        }
+
+        .certificado img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px #22d4fd;
+        }
+
+        .botoes-navegacao {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .botao-seta {
+            background-color: transparent;
+            color: #22d4fd;
+            border: 1px solid #22d4fd;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .botao-seta:hover {
+            background-color: #22d4fd;
+            color: #000;
+        }
+
+        .rodape {
+            background-color: #000;
+            color: #22d4fd;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="certificados.html">Certificados</a>
+            
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="carrossel-container">
+        <h1 style="color: #22d4fd;">Meus Certificados</h1>
+
+        <!-- Certificados com imagem + texto -->
+        <div class="certificado ativo">
+            <img src="/assets/analise_dados_python.png" alt="Certificado 1 - Análise de Dados com Python " />
+            <div> ANÁLISE DE DADOS COM PYTHON</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/sql.png" alt="Certificado 2 - SQL do Básico ao Avançado" />
+            <div> SQL DO BÁSICO AO AVANÇADO</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/aws.png" alt="Certificado 3 - Fundamentos de Cloud AWS" />
+            <div> FUNDAMENTOS EM CLOUD AWS</div>
+        </div>
+
+
+        <div class="certificado">
+            <img src="/assets/net.png" alt="Certificado 4 - Introdução ao Ambiente .NET" />
+            <div> INTRODUÇÃO AO AMBIENTE.NET </div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/engenharia_prompet.png" alt="Certificado 5 - ENGENHARIA DE PROMPT: CRIANDO
+ PROMPTS EFICAZES PARA IA GENERATIVA" />
+            <div> ENGENHARIA DE PROMPT: CRIANDO
+ PROMPTS EFICAZES PARA IA GENERATIVA </div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/logica.png" alt="Certificado 6 - Logica de progrmação" />
+            <div>LÓGICA DE PROGRAMAÇÃO</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/Versionamneto.png" alt="Certificado 7 - Versionamneto de codigo" />
+            <div>VERSIONAMENTO DE CÓDIGO GIT/GITHUB</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/ESTRUTURA DE REPETIÇÃO.png" alt="Certificado 8- Estrutura de repeticao" />
+            <div>ESTRUTURAS DE REPETIÇÃO C#</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/TIPOS DE OPERADORES.png" alt="Certificado 9- Tipos de operadores" />
+            <div>TIPOS DE OPERADORES C#</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/LOFICA DE PROGRAMAÇAO_JAVA.png" alt="Certificado 10 - Logiva de promação com java" />
+            <div>LÓGICA DE PROGAMAÇAO COM JAVASCRIPT</div>
+        </div>
+         
+        <div class="certificado">
+            <img src="/assets/html_css.png" alt="Certificado 11 - HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags" />
+            <div>HMTL E CSS AMBIENTES DE DESENVOLVIMENTO</div>
+        </div>
+
+         <div class="certificado">
+            <img src="/assets/TRELLO.png" alt="Certificado 12 - Trello" />
+            <div>TRELLO</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/FORMS.png" alt="Certificado 13 - Forms" />
+            <div>FORMS - MICROSOLFT</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/FOCO.png" alt="Certificado 14 - Foco" />
+            <div>FOCO:TRAZENDO MAIS RESULTADOS PARA O DIA A DIA</div>
+        </div>
+
+        <div class="certificado">
+            <img src="/assets/PYTHON.png" alt="Certificado 15 - Python" />
+            <div>PYTHON</div>
+        </div>
+
+        <div class="certificado">
+            <img src="assets/liguagem_c_promação.png"="Certificado 16 - C#" />
+            <div>LINGUAGEM DE PROGRAMAÇÃO C#</div>
+        </div>
+
+         <div class="certificado">
+            <img src="/assets/PACOTE.png"="Certificado 17 - Pacote Office" />
+            <div>PACOTE OFFICE</div>
+        </div>
+
+        
+
+
+
+
+        
+
+        <div class="botoes-navegacao">
+            <button class="botao-seta" onclick="voltar()">← Anterior</button>
+            <button class="botao-seta" onclick="avancar()">Próximo →</button>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>Desenvolvido por Patrícia Oliveira.</p>
+    </footer>
+
+    <script>
+        let indiceAtual = 0;
+        const certificados = document.querySelectorAll('.certificado');
+
+        function mostrarCertificado(indice) {
+            certificados.forEach((cert, i) => {
+                cert.classList.remove('ativo');
+                if (i === indice) cert.classList.add('ativo');
+            });
+        }
+
+        function avancar() {
+            indiceAtual = (indiceAtual + 1) % certificados.length;
+            mostrarCertificado(indiceAtual);
+        }
+
+        function voltar() {
+            indiceAtual = (indiceAtual - 1 + certificados.length) % certificados.length;
+            mostrarCertificado(indiceAtual);
+        }
+    </script>
+</body>
+</html>
