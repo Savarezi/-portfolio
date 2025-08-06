@@ -2,7 +2,7 @@
 
 Este é o meu portfólio pessoal desenvolvido com **HTML** e **CSS**, onde apresento meus projetos, formações, habilidades técnicas e formas de contato. O objetivo é criar uma presença online que destaque minha trajetória na área de **Tecnologia** e **Análise de Dados**.
 
-<img width="999" height="564" alt="Captura de tela 2025-07-27 175156" src="https://github.com/user-attachments/assets/35a61e86-e963-4e1f-a49a-554e2d28e722" />
+<img width="1365" height="631" alt="Captura de tela 2025-08-06 150315" src="https://github.com/user-attachments/assets/0c6c7ade-7d6d-432e-b1b6-7228edc99e18" />
 
 
 
