@@ -178,12 +178,12 @@ body {
 
 .botao-artigo {
     background-color: transparent;
-    border: 2px solid #22d4fd;
+    border: 2px solid  #FF69B4;
     border-radius: 8px;
     padding: 10px 15px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
     transition: 0.3s;
@@ -191,9 +191,14 @@ body {
 }
 
 .botao-artigo:hover {
-    background-color: #22d4fd;
+    background-color:#FFC0CB ;
     color: #000;
 }
+.titulo-artigos {
+  font-size: 1.8rem;
+  color: #ff69b4; /* rosa forte */
 
+  margin-bottom: 15px;
+}
 
     
