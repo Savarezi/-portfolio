@@ -56,6 +56,15 @@ Também tenho familiaridade com:
 
 ---
 
+
+### 📬 Conecte-se comigo:
+
+<a href = "mailto:patriciaoliveirasavarezi@gmail.com"><img src="https://img.shields.io/badge/-Email-67cb57?style=for-the-badge&logo=gmail&logoColor=fff"></a>
+<a href="https://www.linkedin.com/in/savarezi"><img src="https://img.shields.io/badge/-LinkedIn-67cb57?style=for-the-badge&logo=linkedin&logoColor=fff"></a>
+<a href="https://discord.gg/nGV6mJyA"><img src="https://img.shields.io/badge/-Discord-67cb57?style=for-the-badge&logo=discord&logoColor=fff"></a>
+
+
+
 ## 🚀 Como visualizar
 
 Você pode visualizar este portfólio de duas formas:
