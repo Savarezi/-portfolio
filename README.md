@@ -6,53 +6,50 @@ Este é o meu portfólio pessoal desenvolvido com **HTML** e **CSS**, onde apres
 
 
 
----
+------
+# 👩‍💻 Sobre Mim
+Sou **Patrícia Oliveira**, estudante de **Análise e Desenvolvimento de Sistemas** e formada em **Análise de Dados com Python** pela Reprograma. Tenho experiência prática em projetos com **Python, SQL, PostgreSQL, Excel Avançado**, além de conhecimentos em desenvolvimento web com **HTML, CSS e JavaScript**.
 
-## 👩‍💻 Sobre Mim
-
-Sou **Patrícia Oliveira**, estudante de Análise e Desenvolvimento de Sistemas e formada em Análise de Dados com Python pela Reprograma. Tenho experiência prática em projetos que envolvem **Python, SQL, PostgreSQL, Excel Avançado**, além de conhecimentos em **desenvolvimento web com HTML, CSS e JavaScript**.
-
-Também tenho familiaridade com:
-- Visualização de dados (Matplotlib, Seaborn, Tableau)
-- Storytelling com dados
-- AWS (conceitos de nuvem)
-- Metodologias ágeis (Scrum)
-- Versionamento com Git e GitHub
+Também tenho familiaridade com:  
+- 📊 **Visualização de dados** (Matplotlib, Seaborn, Tableau)  
+- 📝 **Storytelling com dados**  
+- ☁️ **AWS** (conceitos de nuvem)  
+- ⚡ **Metodologias ágeis** (Scrum)  
+- 🔧 **Versionamento com Git e GitHub**  
 
 ---
 
-## 🎯 Funcionalidades do Portfólio
-
-- Design responsivo ✅
-- Estilo moderno com cores contrastantes e fontes personalizadas 🎨
-- Links diretos para:
-  - [LinkedIn](https://www.linkedin.com/in/savarezi)
-  - [GitHub](https://github.com/Savarezi)
-  - Currículo em PDF 📄
-- Carrossel de seções (Home e Sobre mim)
-- Imagem com bordas estilizadas
+# 🎯 Funcionalidades do Portfólio
+- 🖥️ **Design responsivo**  
+- 🎨 **Estilo moderno** com cores contrastantes e fontes personalizadas  
+- 🔗 **Links diretos** para: LinkedIn, GitHub e Currículo em PDF 📄  
+- 🏠 **Carrossel de seções**: Home, Sobre mim, Certificados & Artigos, Contato  
+- 🖼️ **Imagem com bordas estilizadas**  
+- 📂 **Botão para baixar currículo** em PDF diretamente da tela principal  
 
 ---
 
-## 🌐 Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-- Google Fonts
-- Media Queries para responsividade
-- Organização semântica com boas práticas de estruturação
+# 🌐 Tecnologias Utilizadas
+- HTML5  
+- CSS3  
+- Google Fonts  
+- Media Queries para responsividade  
+- Organização semântica e boas práticas de estruturação  
 
 ---
 
-## 📸 Layout
+# 📸 Layout das Páginas
+## 🏠 Home
+Apresentação com título impactante, descrição, links, imagem personalizada e botão para baixar o currículo 📄  
 
-### Tela principal (Home)
+## 👩‍💻 Sobre mim
+Página com texto detalhado sobre minha formação, habilidades técnicas e experiências práticas  
 
-> Apresentação com título impactante, descrição, links e imagem personalizada.
+## 🎓 Certificados & Artigos
+Página que reúne meus certificados e artigos, organizada de forma clara e visual  
 
-### Página "Sobre mim"
-
-> Texto detalhado com minha formação, habilidades técnicas e experiências práticas.
+## ✉️ Contato
+Formulário para envio direto de e-mails, permitindo que visitantes entrem em contato facilmente  
 
 ---
 
