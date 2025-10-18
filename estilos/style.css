@@ -202,3 +202,83 @@ body {
 }
 
     
+/* ======= MEDIA QUERIES PARA RESPONSIVIDADE ======= */
+
+/* Tablets e notebooks menores */
+@media (max-width: 1024px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apresentacao__conteudo {
+    text-align: center;
+  }
+
+  .minha_foto {
+    max-width: 300px;
+    margin: 20px auto 0;
+  }
+}
+
+/* Celulares e tablets menores */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .certificado div {
+    font-size: 0.9rem;
+  }
+
+  .titulo-artigos {
+    font-size: 1.3rem;
+  }
+
+  .botao-artigo {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao__conteudo_texto {
+    font-size: 0.95rem;
+  }
+
+  .apresentacao__links {
+    justify-content: center;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .cabecalho__menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.3rem;
+  }
+
+  .apresentacao__conteudo_texto {
+    font-size: 0.9rem;
+  }
+
+  .minha_foto {
+    max-width: 100%;
+  }
+
+  .botao-artigo {
+    width: 90%;
+    text-align: center;
+    padding: 10px 12px;
+  }
+
+  .grade-certificados {
+    grid-template-columns: 1fr;
+  }
+}

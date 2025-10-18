@@ -1,283 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Certificados - Patrícia Oliveira</title>
-    <link rel="stylesheet" href="/estilos/style.css" />
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificados - Patrícia Oliveira</title>
+  <link rel="stylesheet" href="/estilos/style.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        .cabecalho {
-            background-color: #000;
-            padding: 15px 20px;
-        }
+    /* ======= CABEÇALHO ======= */
+    .cabecalho {
+      background-color: #000;
+      padding: 15px 20px;
+    }
 
-        .cabecalho__menu {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-        }
+    .cabecalho__menu {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-        .cabecalho__menu__link {
-            color: #22d4fd;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding-bottom: 4px;
-            transition: border-bottom 0.3s;
-        }
+    .cabecalho__menu__link {
+      color: #22d4fd;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding-bottom: 4px;
+      transition: border-bottom 0.3s;
+    }
 
-        .cabecalho__menu__link:hover {
-            border-bottom: 2px solid #22d4fd;
-        }
+    .cabecalho__menu__link:hover {
+      border-bottom: 2px solid #22d4fd;
+    }
 
-        .carrossel-container {
-            max-width: 800px;
-            margin: 50px auto;
-            border: 2px solid #FF69B4;
-            border-radius: 16px;
-            padding: 30px;
-            background-color: #000000;
-        }
+    /* ======= CONTEÚDO PRINCIPAL ======= */
+    main {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px 80px;
+      text-align: center;
+    }
 
-        .certificado {
-            display: none;
-            text-align: center;
-            color: #fff;
-            font-size: 18px;
-            padding: 20px;
-        }
+    h1 {
+      color: #22d4fd;
+      margin-bottom: 40px;
+    }
 
-        .certificado.ativo {
-            display: block;
-        }
+    /* ======= GRADE DE CERTIFICADOS ======= */
+    .grade-certificados {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
 
-        .certificado img {
-            max-width: 100%;
-            max-height: 300px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 0 10px #22d4fd;
-        }
+    .certificado {
+      background-color: #111;
+      border: 2px solid #22d4fd;
+      border-radius: 14px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .botoes-navegacao {
-            text-align: center;
-            margin-top: 20px;
-        }
+    .certificado:hover {
+      background-color: #22d4fd;
+      color: #000;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #22d4fd, 0 0 30px #22d4fd;
+    }
 
-        .botao-seta {
-            background-color: transparent;
-            color: #22d4fd;
-            border: 1px solid #22d4fd;
-            border-radius: 8px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-        }
+    .certificado img {
+      max-width: 100%;
+      height: 160px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
 
-        .botao-seta:hover {
-            background-color: #22d4fd;
-            color: #000;
-        }
+    .certificado:hover img {
+      transform: scale(1.05);
+    }
 
-        .rodape {
-         padding: 24px;
-         color: var(--cor-primaria);
-         background-color: var(--cor-tercearia);
-         text-align: center;
-         font-family: var(--fonte-secundaria);
-         font-size: 1.5rem;
-         font-weight: 400;
-         position: fixed;
-         bottom: 0;
-         left: 0;
-         width: 100%;
-         z-index: 100;
-    
-}
-           
-    </style>
+    .certificado div {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* ======= ARTIGOS ======= */
+    .artigos-container {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .titulo-artigos {
+      color: #22d4fd;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    .botao-artigo {
+      display: inline-block;
+      margin: 10px;
+      color: #22d4fd;
+      text-decoration: none;
+      border: 2px solid #22d4fd;
+      padding: 14px 24px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      background-color: transparent;
+      box-shadow: 0 0 5px transparent;
+    }
+
+    .botao-artigo:hover {
+      background-color: #22d4fd;
+      color: #000;
+      box-shadow: 0 0 15px #22d4fd, 0 0 30px #22d4fd;
+      transform: translateY(-3px);
+    }
+
+    /* ======= RODAPÉ ======= */
+    .rodape {
+      padding: 24px;
+      color: #000;
+      background-color: #22d4fd;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.6rem; }
+      .certificado div { font-size: 0.9rem; }
+      .titulo-artigos { font-size: 1.3rem; }
+      .botao-artigo { padding: 10px 16px; font-size: 0.95rem; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Menu de navegação -->
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="certificados.html">Certificados</a>
-             <a class="cabecalho__menu__link" href="contato.html">Contato</a>
-        </nav>
-            
-        </nav>
-    </header>
+  <!-- ======= MENU ======= -->
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="certificados.html">Certificados</a>
+      
+    </nav>
+  </header>
 
-    <!-- Conteúdo principal -->
-    <main class="carrossel-container">
-        <h1 style="color: #22d4fd;">📜Meus Certificados</h1>
+  <!-- ======= CONTEÚDO ======= -->
+  <main>
+    <h1>📜 Meus Certificados</h1>
 
-        <!-- Certificados com imagem + texto -->
-        <div class="certificado ativo">
-            <img src="/assets/analise_dados_python.png" alt="Certificado 1 - Análise de Dados com Python " />
-            <div> ANÁLISE DE DADOS COM PYTHON</div>
-        </div>
+    <div class="grade-certificados">
+      <a class="certificado" href="/assets/analise_dados_python.png" target="_blank">
+        <img src="/assets/analise_dados_python.png" alt="Análise de Dados com Python" />
+        <div>ANÁLISE DE DADOS COM PYTHON</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/sql.png" alt="Certificado 2 - SQL do Básico ao Avançado" />
-            <div> SQL DO BÁSICO AO AVANÇADO</div>
-        </div>
+      <a class="certificado" href="/assets/sql.png" target="_blank">
+        <img src="/assets/sql.png" alt="SQL" />
+        <div>SQL DO BÁSICO AO AVANÇADO</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/aws.png" alt="Certificado 3 - Fundamentos de Cloud AWS" />
-            <div> FUNDAMENTOS EM CLOUD AWS</div>
-        </div>
+      <a class="certificado" href="/assets/aws.png" target="_blank">
+        <img src="/assets/aws.png" alt="AWS" />
+        <div>FUNDAMENTOS EM CLOUD AWS</div>
+      </a>
 
+      <a class="certificado" href="/assets/net.png" target="_blank">
+        <img src="/assets/net.png" alt=".NET" />
+        <div>INTRODUÇÃO AO AMBIENTE .NET</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/net.png" alt="Certificado 4 - Introdução ao Ambiente .NET" />
-            <div> INTRODUÇÃO AO AMBIENTE.NET </div>
-        </div>
+      <a class="certificado" href="/assets/engenharia_prompet.png" target="_blank">
+        <img src="/assets/engenharia_prompet.png" alt="Engenharia de Prompt" />
+        <div>ENGENHARIA DE PROMPT</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/engenharia_prompet.png" alt="Certificado 5 - ENGENHARIA DE PROMPT: CRIANDO
- PROMPTS EFICAZES PARA IA GENERATIVA" />
-            <div> ENGENHARIA DE PROMPT: CRIANDO
- PROMPTS EFICAZES PARA IA GENERATIVA </div>
-        </div>
+      <a class="certificado" href="/assets/logica.png" target="_blank">
+        <img src="/assets/logica.png" alt="Lógica de Programação" />
+        <div>LÓGICA DE PROGRAMAÇÃO</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/logica.png" alt="Certificado 6 - Logica de progrmação" />
-            <div>LÓGICA DE PROGRAMAÇÃO</div>
-        </div>
+      <a class="certificado" href="/assets/Versionamneto.png" target="_blank">
+        <img src="/assets/Versionamneto.png" alt="Versionamento" />
+        <div>VERSIONAMENTO DE CÓDIGO GIT/GITHUB</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/Versionamneto.png" alt="Certificado 7 - Versionamneto de codigo" />
-            <div>VERSIONAMENTO DE CÓDIGO GIT/GITHUB</div>
-        </div>
+      <a class="certificado" href="/assets/ESTRUTURA DE REPETIÇÃO.png" target="_blank">
+        <img src="/assets/ESTRUTURA DE REPETIÇÃO.png" alt="Estruturas de Repetição" />
+        <div>ESTRUTURAS DE REPETIÇÃO C#</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/ESTRUTURA DE REPETIÇÃO.png" alt="Certificado 8- Estrutura de repeticao" />
-            <div>ESTRUTURAS DE REPETIÇÃO C#</div>
-        </div>
+      <a class="certificado" href="/assets/html_css.png" target="_blank">
+        <img src="/assets/html_css.png" alt="HTML e CSS" />
+        <div>HTML E CSS</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/TIPOS DE OPERADORES.png" alt="Certificado 9- Tipos de operadores" />
-            <div>TIPOS DE OPERADORES C#</div>
-        </div>
+      <a class="certificado" href="/assets/PYTHON.png" target="_blank">
+        <img src="/assets/PYTHON.png" alt="Python" />
+        <div>PYTHON</div>
+      </a>
 
-        <div class="certificado">
-            <img src="/assets/LOFICA DE PROGRAMAÇAO_JAVA.png" alt="Certificado 10 - Logiva de promação com java" />
-            <div>LÓGICA DE PROGAMAÇAO COM JAVASCRIPT</div>
-        </div>
-         
-        <div class="certificado">
-            <img src="/assets/html_css.png" alt="Certificado 11 - HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags" />
-            <div>HMTL E CSS AMBIENTES DE DESENVOLVIMENTO</div>
-        </div>
+      <a class="certificado" href="/assets/EXCEL_DADOS.png" target="_blank">
+        <img src="/assets/EXCEL_DADOS.png" alt="Excel para Análise de Dados" />
+        <div>EXCEL PARA ANÁLISE DE DADOS</div>
+      </a>
 
-         <div class="certificado">
-            <img src="/assets/TRELLO.png" alt="Certificado 12 - Trello" />
-            <div>TRELLO</div>
-        </div>
-
-        <div class="certificado">
-            <img src="/assets/FORMS.png" alt="Certificado 13 - Forms" />
-            <div>FORMS - MICROSOLFT</div>
-        </div>
-
-        <div class="certificado">
-            <img src="/assets/FOCO.png" alt="Certificado 14 - Foco" />
-            <div>FOCO:TRAZENDO MAIS RESULTADOS PARA O DIA A DIA</div>
-        </div>
-
-        <div class="certificado">
-            <img src="/assets/PYTHON.png" alt="Certificado 15 - Python" />
-            <div>PYTHON</div>
-        </div>
-
-        <div class="certificado">
-            <img src="assets/liguagem_c_promação.png"="Certificado 16 - C#" />
-            <div>LINGUAGEM DE PROGRAMAÇÃO C#</div>
-        </div>
-
-         <div class="certificado">
-            <img src="/assets/PACOTE.png"="Certificado 17 - Pacote Office" />
-            <div>PACOTE OFFICE</div>
-        </div>
-        
-         <div class="certificado">
-            <img src="/assets/EXCEL_DADOS.png"="Certificado 18 -  Excel para Análise de Dados !" />
-            <div>EXCEL PARA ANÁLISE DE DADOS</div>
-        </div>
-        <div class="certificado">
-            <img src="/assets/laço_repetição.png"="Certificado 19-  Estruturas Condicionais e de Repetição em Python" />
-            <div>Estruturas Condicionais e de Repetição em Python</div>
-        </div>
+      <a class="certificado" href="/assets/santader.png" target="_blank">
+        <img src="/assets/santader.png" alt="Bootcamp Santander Code Girls - 2025" />
+        <div>Bootcamp Santander Code Girls (AWS) - 2025</div>
+      </a>
+    </div>
 
 
-
-
-
-
-
-
-          <!-- Botões para Artigos -->
-           
-
-         <div class="artigos-container">
-        <h2 class="titulo-artigos">📚 Artigos</h2>
-         <a class="botao-artigo" href="/assets/SQL e Power BI Guia Completo Para Transformar Dados em Insig.pdf" target="_blank">
-        🖥️ Guia Completo Para Transformar Dados em Insights Estratégicos
-        </a>
-       <a class="botao-artigo" href="/assets/Big Data e Python.pdf" target="_blank">
-        🖥️ Big Data e Python
-        </a>
-         </div>
-
-
-        
-
-
-
-
-        <div class="botoes-navegacao">
-            <button class="botao-seta" onclick="voltar()">← Anterior</button>
-            <button class="botao-seta" onclick="avancar()">Próximo →</button>
-        </div>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <p>Desenvolvido por Patrícia Oliveira.</p>
-    </footer>
-
-    <script>
-        let indiceAtual = 0;
-        const certificados = document.querySelectorAll('.certificado');
-
-        function mostrarCertificado(indice) {
-            certificados.forEach((cert, i) => {
-                cert.classList.remove('ativo');
-                if (i === indice) cert.classList.add('ativo');
-            });
-        }
-
-        function avancar() {
-            indiceAtual = (indiceAtual + 1) % certificados.length;
-            mostrarCertificado(indiceAtual);
-        }
-
-        function voltar() {
-            indiceAtual = (indiceAtual - 1 + certificados.length) % certificados.length;
-            mostrarCertificado(indiceAtual);
-        }
-    </script>
+  <!-- ======= RODAPÉ ======= -->
+  <footer class="rodape">
+    Desenvolvido por Patrícia Oliveira.
+  </footer>
 </body>
 </html>
