@@ -2,9 +2,7 @@
 
 Este é o meu portfólio pessoal desenvolvido com **HTML** e **CSS**, onde apresento meus projetos, formações, habilidades técnicas e formas de contato. O objetivo é criar uma presença online que destaque minha trajetória na área de **Tecnologia** e **Análise de Dados**.
 
-<img width="1365" height="631" alt="Captura de tela 2025-08-06 150315" src="https://github.com/user-attachments/assets/0c6c7ade-7d6d-432e-b1b6-7228edc99e18" />
-
-
+<img width="929" height="429" alt="image" src="https://github.com/user-attachments/assets/9296da56-46c0-4a9c-b616-60b5fa636d27" />
 
 ------
 # 👩‍💻 Sobre Mim
@@ -58,7 +56,6 @@ Formulário para envio direto de e-mails, permitindo que visitantes entrem em co
 
 <a href = "mailto:patriciaoliveirasavarezi@gmail.com"><img src="https://img.shields.io/badge/-Email-67cb57?style=for-the-badge&logo=gmail&logoColor=fff"></a>
 <a href="https://www.linkedin.com/in/savarezi"><img src="https://img.shields.io/badge/-LinkedIn-67cb57?style=for-the-badge&logo=linkedin&logoColor=fff"></a>
-<a href="https://discord.gg/nGV6mJyA"><img src="https://img.shields.io/badge/-Discord-67cb57?style=for-the-badge&logo=discord&logoColor=fff"></a>
 
 
 
